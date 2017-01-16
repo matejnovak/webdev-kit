@@ -1,0 +1,26 @@
+/**
+ * Color styles (Google material palette: 500 - 700)
+ * -----------------------------------------------------------------------------
+ */
+
+/* Typography */
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   lighten(#000, 33.5%) !default; // #555
+$gray-light:             lighten(#000, 46.7%) !default; // #777
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+/* Brand Color */
+$primary:                red;
+$secondary:              darken($primary, 50%);
+
+/* Headings */
+$headings-color:         inherit !default;
+
+/* Hyperlinks color */
+$link-color:            red !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+/* Selection */
+$selection:              lighten($primary, 30%);

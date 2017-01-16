@@ -1,0 +1,35 @@
+/**
+ * Form styles
+ * -----------------------------------------------------------------------------
+ */
+
+input[type="text"], textarea {
+  display: inline-block;
+  margin: 0;
+  //width: 100%;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 2px;
+  line-height: $line-height-base;
+  vertical-align: middle;
+
+  padding: 5px;
+  border: 1px solid $gray-light;
+  transition: box-shadow 0.3s, border 0.3s;
+
+  &:focus {
+    outline: none;
+
+    border: 1px solid $gray;
+    box-shadow: 0 0 5px 1px $gray-lighter;
+  }
+
+  .wf-active & {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+textarea {
+  resize: vertical;
+  height: auto;
+}

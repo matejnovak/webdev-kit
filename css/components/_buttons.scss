@@ -1,0 +1,30 @@
+/**
+ * Button styles
+ * -----------------------------------------------------------------------------
+ */
+
+/* Default */
+button, .btn {
+  display: block;
+  padding: 5px 20px;
+  @include font-size(13px);
+  font-weight: 600;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+  @include transition(background .1s ease)
+
+  .wf-active & {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: white;
+    outline: 0;
+    background: $gray-light;
+    cursor: pointer;
+  }
+}

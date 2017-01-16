@@ -1,0 +1,85 @@
+/**
+ * Basic styles
+ * -----------------------------------------------------------------------------
+ */
+
+/* Box sizing */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* Lists styles */
+ul, ol {
+  margin-top: 0;
+  margin-bottom: ($line-height-computed / 2);
+
+  ul, ol {
+    margin-bottom: 0;
+  }
+}
+
+/* Hyperlink styles */
+a {
+  color: $link-color;
+  text-decoration: $link-hover-decoration;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+  }
+}
+
+/* Responsive image */
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Other */
+audio,
+canvas,
+iframe,
+svg,
+video {
+  vertical-align: middle;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  margin: 1em 0;
+  padding: 0;
+  background: $gray-light;
+}
+
+/* Browser upgrade styles */
+.browserupgrade {
+  margin: 0.2em 0;
+  padding: 0.2em 0;
+  background: #ccc;
+  color: #000;
+}
+
+/**
+ * Import -->
+ * -----------------------------------------------------------------------------
+ */
+
+@import "typography";
+@import "print";
+@import "selection";
