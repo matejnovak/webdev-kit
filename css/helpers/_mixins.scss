@@ -55,31 +55,6 @@
 }
 
 /**
-  * Provides a concise, one-line method for setting an element’s
-  * positioning properties: `position`, `top`, `right`, `bottom`
-  * and `left`. Use a `null` value to “skip” an edge of the box.
-  * Usage: @include position(absolute, 10px, 20px, null, null);
-  */
-@mixin position($position, $box-edge-values) {
-  $box-edge-values: _unpack-shorthand($box-edge-values);
-
-  $offsets: (
-    top:    nth($box-edge-values, 1),
-    right:  nth($box-edge-values, 2),
-    bottom: nth($box-edge-values, 3),
-    left:   nth($box-edge-values, 4),
-  );
-
-  position: $position;
-
-  @each $offset, $value in $offsets {
-    @if _is-length($value) {
-      #{$offset}: $value;
-    }
-  }
-}
-
-/**
   * Sizing shortcuts
   * Usage: @include size(200px, 100px);
   */
@@ -98,22 +73,33 @@
   background: linear-gradient(to left, $color-one, $color-two);
 }
 
-@mixin transition($transition...) {
-  -webkit-transition: $transition;
-     -moz-transition: $transition;
-      -ms-transition: $transition;
-          transition: $transition;
+/* Media queries (mobile-first) */
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) {
+    @content;
+  }
 }
 
-/* Media queries */
+@mixin mobile-large {
+  @media (min-width: #{$mobile-large-width}) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: #{$tablet-width}) {
     @content;
   }
 }
 
+@mixin laptop {
+  @media (min-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
 @mixin desktop {
-  @media (min-width: #{$desktops-width}) {
+  @media (min-width: #{$desktop-width}) {
     @content;
   }
 }

@@ -13,11 +13,7 @@ button, .btn {
   border: none;
   text-transform: uppercase;
   border-radius: 2px;
-  @include transition(background .1s ease)
-
-  .wf-active & {
-    font-family: 'Open Sans', sans-serif;
-  }
+  transition: background .1s ease;
 
   &:hover,
   &:active,

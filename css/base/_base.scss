@@ -19,6 +19,7 @@ html {
 
 /* Lists styles */
 ul, ol {
+  padding: 0;
   margin-top: 0;
   margin-bottom: ($line-height-computed / 2);
 
@@ -65,14 +66,6 @@ hr {
   margin: 1em 0;
   padding: 0;
   background: $gray-light;
-}
-
-/* Browser upgrade styles */
-.browserupgrade {
-  margin: 0.2em 0;
-  padding: 0.2em 0;
-  background: #ccc;
-  color: #000;
 }
 
 /**

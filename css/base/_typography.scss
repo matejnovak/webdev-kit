@@ -6,6 +6,8 @@
 html {
   @include font-size($font-size-base);
   line-height: $line-height-computed;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 /* Headings */
@@ -15,10 +17,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: $line-height-computed;
   margin-bottom: ($line-height-computed / 2);
   color: $headings-color;
-
-  .wf-active & {
-    font-family: 'Open Sans', sans-serif;
-  }
 }
 
 h1 { @include font-size($font-size-h1); }
@@ -30,9 +28,5 @@ h6 { @include font-size($font-size-h6); }
 
 /* Paragraphs */
 p {
-  margin: 0 0 ($line-height-computed / 2);
-
-  .wf-active & {
-    font-family: 'Open Sans', sans-serif;
-  }
+  line-height: $line-height-computed;
 }

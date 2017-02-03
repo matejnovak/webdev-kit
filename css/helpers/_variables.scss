@@ -4,8 +4,11 @@
  */
 
 /* Media queries */
+$mobile-width:            320px;
+$mobile-large-width:      525px;
 $tablet-width:            768px; // Small Devices, Tablets
-$desktops-width:          992px; // Medium Devices, Desktops
+$laptop-width:            992px; // Medium Devices, Desktops
+$desktop-width:           1024px;
 $tv-width:                1200px; // Large Devices, TV
 
 /* Fonts */

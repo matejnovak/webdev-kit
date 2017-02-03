@@ -7,12 +7,12 @@
 		"uuidString": "367D414B-3CB4-4514-B0CF-40E5D8EEF831"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25504",
 "files": {
-	"\/.gitignore": {
+	"\/.htaccess": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/.gitignore",
+		"oAP": "\/.htaccess",
 		"oF": 0
 		},
 	"\/404.html": {
@@ -1069,6 +1069,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -1608,6 +1612,10 @@
 		"prefer-const": {
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-numeric-literals": {
 			"active": 0,

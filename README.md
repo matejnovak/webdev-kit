@@ -10,7 +10,7 @@ Webdev-kit is front-end template (html, css, js) for building web apps or sites.
 
 ## Plus
 
-* [SASS](https://github.com/sass/sass) + helpful mixins
-* [webfontloader](https://github.com/typekit/webfontloader)
-* 100/100 on Google PageSpeed
+* [SASS](https://github.com/sass/sass)
+* Helpful SASS mixins
+* Template for web icons (Adobe XD)
 * and much more!
