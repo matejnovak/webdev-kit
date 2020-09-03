@@ -1,5 +1,5 @@
 /**
- * Color styles (Google material palette: 500 - 700)
+ * Color styles
  * -----------------------------------------------------------------------------
  */
 
@@ -23,4 +23,4 @@ $link-hover-color:      darken($link-color, 15%) !default;
 $link-hover-decoration: underline !default;
 
 /* Selection */
-$selection:              lighten($primary, 30%);
+$selection:             lighten($primary, 30%);
