@@ -2,7 +2,7 @@
 
 ![Web kit](webdev-kit-logo.jpg)
 
-### webdev-kit
+### Webdev-kit
 Webdev-kit is front-end template (html, css, js) for building web apps or sites.
 
 #### Mixture of
