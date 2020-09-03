@@ -1,14 +1,17 @@
-#webdev-kit
+## Description
 
+![Web kit](webdev-kit-logo.jpg)
+
+### webdev-kit
 Webdev-kit is front-end template (html, css, js) for building web apps or sites.
 
-## Mixture of
+#### Mixture of
 
 * [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate)
 * [web-starter-kit](https://github.com/google/web-starter-kit)
 * [bootstrap](https://github.com/twbs/bootstrap)
 
-## Plus
+#### Plus
 
 * [SASS](https://github.com/sass/sass)
 * Helpful SASS mixins
